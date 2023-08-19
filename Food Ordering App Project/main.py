@@ -4,8 +4,8 @@ from admin import *
 from user import *
 
 
-admin = admin()
-user = user()
+Admin = admin()
+User = user()
 
 print('welcome to the food ordering app')
 while True:
@@ -21,13 +21,13 @@ while True:
         print('press 4 to remove food')
         choice = int(input('enter your choice :'))
         if choice ==1:
-            admin.add_new_food()
+            Admin.add_new_food()
         elif choice == 2:
-            admin.edit_food_items()
+            Admin.edit_food_items()
         elif choice==3:
-            admin.show_food_items()
+            Admin.show_food_items()
         elif choice==4:
-            admin.remove_food_items()
+            Admin.remove_food_items()
         else:
             print('enter valid input')
     elif option ==2:
@@ -36,20 +36,20 @@ while True:
         print('press 2 for login')
         choice = int(input('enter your choice :'))
         if choice == 1:
-            user.register()
+            User.register()
         elif choice ==2:
-            temp= user.login()
+            temp= User.login()
             if temp:
                 print('press 1 for place order')
                 print('press 2 for order history')
                 print('press 3 for update profile')
                 option =int(input('enter your choice :'))
                 if option ==1:
-                    user.place_new_order()
+                    User.place_new_order()
                 elif option == 2:
-                    user.order_history()
+                    User.order_history()
                 elif option==3:
-                    user.edit_profile()
+                    User.edit_profile()
                 else:
                     print('please provide valid input')
             else:
