@@ -1,0 +1,18 @@
+{
+    "1": {
+        "food_name": "maggie",
+        "food_quantity": "1",
+        "food_price": 12.0,
+        "food_discount": 10.0,
+        "food_stock": "5",
+        "discounted_price": 10.8
+    },
+    "2": {
+        "food_name": "pasta",
+        "food_quantity": "1",
+        "food_price": "15",
+        "food_discount": 10.0,
+        "food_stock": "8",
+        "discounted_price": 18.0
+    }
+}
